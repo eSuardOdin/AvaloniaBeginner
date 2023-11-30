@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using Avalonia.Interactivity;
 using Avalonia.Controls;
-
+using System;
 using CatApp.Views.Main;
 
 
@@ -15,6 +15,7 @@ class MainController
     {
         _view = view;
         ConfigureMainHeader();
+        ConfigureSideBar();
     }
 
     private void ConfigureMainHeader()
@@ -38,5 +39,41 @@ class MainController
 
         // start a process with the defined info
         Process.Start(startInfo);
+    }
+
+    // Attach changing view to btn click
+    private void ConfigureSideBar()
+    {
+        foreach (var child in _view.SideBar.Children)
+        {
+            if(child is Button)
+            {
+                ((Button)child).Click += ChangeView;
+            }
+        }
+    }
+
+    private void ChangeView(object? sender, RoutedEventArgs e)
+    {
+        string viewName = ((Button)sender).Tag.ToString();
+
+        switch(viewName)
+        {
+            case "Home":
+                Console.WriteLine("Home");
+                // ((Button)sender).Content="Clicked";
+                break;
+            case "Counter":
+                Console.WriteLine("Counter");
+                // ((Button)sender).Content="Clicked";
+                break;
+            case "FetchData":
+                Console.WriteLine("Fetch data");
+                // ((Button)sender).Content="Clicked";
+                break;
+            default:
+                Console.WriteLine("The view does not exists");
+                break;
+        }
     }
 }
