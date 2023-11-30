@@ -3,7 +3,7 @@ using Avalonia.Interactivity;
 using Avalonia.Controls;
 using System;
 using CatApp.Views.Main;
-
+using CatApp.Views.Home;
 
 // Linked to the main View behind code
 class MainController
@@ -61,6 +61,7 @@ class MainController
         {
             case "Home":
                 Console.WriteLine("Home");
+                _view.MainContentArea.Content = new HomeView();
                 // ((Button)sender).Content="Clicked";
                 break;
             case "Counter":

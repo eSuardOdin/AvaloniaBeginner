@@ -13,10 +13,13 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CatApp
-build_property.ProjectDir = C:\Users\Erwann\source\repos\AvaloniaBeginner\CatApp\
+build_property.ProjectDir = /home/ubuntu/Dev/AvaloniaBeginner/CatApp/
 
-[C:/Users/Erwann/source/repos/AvaloniaBeginner/CatApp/App.axaml]
+[/home/ubuntu/Dev/AvaloniaBeginner/CatApp/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/Erwann/source/repos/AvaloniaBeginner/CatApp/Views/Main/MainWindow.axaml]
+[/home/ubuntu/Dev/AvaloniaBeginner/CatApp/Views/Home/HomeView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/ubuntu/Dev/AvaloniaBeginner/CatApp/Views/Main/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

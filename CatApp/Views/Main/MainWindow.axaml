@@ -54,6 +54,11 @@
                     <Button Foreground="white" Background="Transparent" Width="200" FontSize="16" Padding="30,7" Tag="FetchData">Fetch data</Button>
                 </StackPanel>
             </Panel>
+
+            <!-- MAIN PANEL this will be updated to include UserControl by logic -->
+            <UserControl Name="MainContentArea" Background="#181a1b" Grid.Column="1" Grid.Row="1">
+
+            </UserControl>
         </Grid>
 
 
