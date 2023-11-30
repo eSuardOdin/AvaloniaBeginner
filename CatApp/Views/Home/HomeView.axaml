@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="CatApp.Views.Home.HomeView">
-  <StackPanel Margin="22" Spacing="15">
+  <StackPanel Background="white" Margin="22" Spacing="15">
     <TextBlock FontSize="50">Hello there.</TextBlock>
     <TextBlock FontSize="16">Welcome to Avalonia UI</TextBlock>
 

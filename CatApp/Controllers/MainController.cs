@@ -4,6 +4,8 @@ using Avalonia.Controls;
 using System;
 using CatApp.Views.Main;
 using CatApp.Views.Home;
+using CatApp.Views.Click;
+using CatApp.Views.FetchData;
 
 // Linked to the main View behind code
 class MainController
@@ -66,10 +68,12 @@ class MainController
                 break;
             case "Counter":
                 Console.WriteLine("Counter");
+                _view.MainContentArea.Content = new ClickView(); 
                 // ((Button)sender).Content="Clicked";
                 break;
             case "FetchData":
                 Console.WriteLine("Fetch data");
+                _view.MainContentArea.Content = new FetchDataView();
                 // ((Button)sender).Content="Clicked";
                 break;
             default:

@@ -18,6 +18,12 @@ build_property.ProjectDir = /home/ubuntu/Dev/AvaloniaBeginner/CatApp/
 [/home/ubuntu/Dev/AvaloniaBeginner/CatApp/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[/home/ubuntu/Dev/AvaloniaBeginner/CatApp/Views/Click/ClickView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/ubuntu/Dev/AvaloniaBeginner/CatApp/Views/FetchData/FetchDataView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [/home/ubuntu/Dev/AvaloniaBeginner/CatApp/Views/Home/HomeView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
