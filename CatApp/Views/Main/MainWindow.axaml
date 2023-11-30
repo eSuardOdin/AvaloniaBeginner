@@ -4,6 +4,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="CatApp.Views.Main.MainWindow"
-        Title="CatApp">
-    Welcome to Avalonia!
+        MinWidth="960"
+        MinHeight="420"
+        Title="Test Avalonia MVC">
+        
+        <!-- 
+            Grid definition first 
+
+            <Grid RowDefinitions="70,*" ColumnDefinitions="250,*">
+            <Grid.RowDefinitions>
+                <RowDefinition  Height="70" />
+                <RowDefinition  Height="*" />
+            <Grid.RowDefinitions/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition  Width="250" />
+                <ColumnDefinition  Width="*" />
+            <Grid.ColumnDefinitions/>
+        </Grid> -->
+
+        <!-- Grid def second -->
+        <Grid ShowGridLines="true" RowDefinitions="70,*" ColumnDefinitions="250,*">
+            <!-- <Panel Background="#051130" Grid.Row="0" Grid.Column="0">
+            </Panel> -->
+            <Panel Background="#051130" Grid.Row="0" Grid.Column="0">
+                <TextBlock Foreground="white" TextAlignment="Center" FontSize="18" FontWeight="Bold" Padding="0, 20">
+                    Cat App
+                </TextBlock>
+            </Panel>
+        </Grid>
 </Window>
